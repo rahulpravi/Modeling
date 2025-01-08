@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hero">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="logo">Model Portfolio</div>
+            <div class="menu">
+                <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+                <ul id="nav-links" class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Showcasing Elegance & Style</h1>
+                <button class="cta-btn">VIEW MORE</button>
+            </div>
+        </div>
+    </div>
+    <section id="about" class="about-section">
+    <div class="about-container">
+        <!-- Profile Picture -->
+        <img src="assets/profile.jpg" alt="Profile Picture" class="profile-picture">
+        <!-- Brief Bio -->
+        <div class="about-content">
+            <h2 class="about-title">About Me</h2>
+            <p class="about-text">
+                Hello! I'm [Model's Name], a passionate model specializing in showcasing elegance, style, and creativity. With experience in fashion, commercial, and editorial projects, I strive to bring artistry to every shoot.
+            </p>
+            <!-- Social Media Links -->
+            <div class="social-links">
+                <a href="#" target="_blank" class="social-icon"><i class="fa fa-facebook"></i></a>
+                <a href="#" target="_blank" class="social-icon"><i class="fa fa-instagram"></i></a>
+                <a href="#" target="_blank" class="social-icon"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="portfolio-section animate-section">
+    <h2>Portfolio</h2>
+    <div class="portfolio-grid">
+        <!-- Example Portfolio Items -->
+        <div class="portfolio-item">
+            <img src="assets/image2.jpg" alt="Model 1">
+            <div class="overlay">
+                <p>Project: Elegance</p>
+                <p>Photographer: John Doe</p>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="assets/image3.jpg" alt="Model 2">
+            <div class="overlay">
+                <p>Project: Fashion</p>
+                <p>Photographer: Jane Doe</p>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="assets/image4.jpg" alt="Model 3">
+            <div class="overlay">
+                <p>Project: Creativity</p>
+                <p>Photographer: Alex Smith</p>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+            <img src="assets/image5.jpg" alt="Model 1">
+            <div class="overlay">
+                <p>Project: Elegance</p>
+                <p>Photographer: John Doe</p>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="assets/image6.jpg" alt="Model 2">
+            <div class="overlay">
+                <p>Project: Fashion</p>
+                <p>Photographer: Jane Doe</p>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="assets/image7.jpg" alt="Model 3">
+            <div class="overlay">
+                <p>Project: Creativity</p>
+                <p>Photographer: Alex Smith</p>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" src="" alt="Lightbox Image">
+</div>
+<section class="services-section animate-section">
+    <h2>Services</h2>
+    <div class="services-grid">
+        <!-- Service Card 1 -->
+        <div class="service-card">
+            <div class="service-icon">📸</div>
+            <h3>Photoshoots</h3>
+            <p>Professional photoshoots for fashion, portraits, and branding.</p>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="service-card">
+            <div class="service-icon">🤝</div>
+            <h3>Collaborations</h3>
+            <p>Partner with brands, photographers, and creatives for impactful projects.</p>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="service-card">
+            <div class="service-icon">🎉</div>
+            <h3>Events</h3>
+            <p>Available for modeling in fashion shows, exhibitions, and events.</p>
+        </div>
+    </div>
+</section>
+<section class="testimonials-section">
+    <h2>Testimonials</h2>
+    <div class="testimonial-carousel">
+        <div class="testimonial">
+            <p>"Working with her was an absolute pleasure! She brought so much energy and creativity to the shoot."</p>
+            <h4>- John Doe, Photographer</h4>
+        </div>
+        <div class="testimonial">
+            <p>"A true professional. Her confidence and elegance made our fashion show a huge success."</p>
+            <h4>- Jane Smith, Event Manager</h4>
+        </div>
+        <div class="testimonial">
+            <p>"She has an incredible eye for detail and made our collaboration seamless and fun!"</p>
+            <h4>- Alex Brown, Designer</h4>
+        </div>
+    </div>
+</section>
+<section class="contact-section">
+    <h2>Contact Us</h2>
+    <div class="contact-container">
+        <!-- Contact Form -->
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" placeholder="Enter your message" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
+
+        <!-- Map Integration (Optional) -->
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434508416!2d144.95605431567156!3d-37.81720974202112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf57759a79a08fa0!2sMelbourne%20CBD%2C%20Melbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sus!4v1678449216723!5m2!1sen!2sus" 
+                width="100%" 
+                height="250" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <!-- Social Media Icons -->
+    <div class="social-media">
+        <a href="#" target="_blank" class="social-icon"><i class="fa fa-facebook"></i></a>
+                <a href="#" target="_blank" class="social-icon"><i class="fa fa-instagram"></i></a>
+                <a href="#" target="_blank" class="social-icon"><i class="fa fa-twitter"></i></a>
+    </div>
+</section>
+<footer class="site-footer">
+    <div class="footer-container">
+        <!-- Logo -->
+        <div class="footer-logo">
+            <h2>ModelSite</h2>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- Copyright Notice -->
+    <div class="footer-copyright">
+        <p>&copy; 2025 ModelSite. All rights reserved.</p>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
